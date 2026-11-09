@@ -1,0 +1,152 @@
+/* On enlève les marges par défaut du navigateur */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* .main = Toute la page */
+.main{
+    width: 100%;
+    background-image: url(assets/img/bg.jpg); /* Image de fond */
+    background-position: center;
+    background-size: cover; /* L'image couvre tout l'écran */
+    height: 100vh; /* 100% de la hauteur de l'écran */
+    position: relative; /* Pour placer la fille en absolute dedans */
+    font-family: sans-serif;
+}
+
+/* .navbar = Barre du haut */
+.navbar{
+    width: 86%;
+    display: flex; /* Met logo et menu sur la même ligne */
+    margin: auto;
+    padding: 15px 0;
+    align-items: center; /* Centre verticalement */
+    justify-content: space-between; /* Logo à gauche, menu à droite */
+}
+
+/* Le logo */
+.navbar .logo{
+    width: 160px;
+    cursor: pointer; /* Curseur main au survol */
+    margin-top: -3%;
+    margin-left: -2%;
+}
+
+/* Le menu ul */
+ul{
+    margin-top: -4%;
+}
+
+/* Chaque élément du menu */
+ul li{
+    list-style: none; /* Enlève les puces */
+    display: inline-block; /* Met les liens en ligne */
+    padding: 10px 16px;
+}
+
+/* Les liens du menu */
+ul li a{
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none; /* Enlève le souligné */
+    color: darkslategray;
+    margin-top: -3%;
+    transition: .4s ease; /* Animation douce au survol */
+}
+
+/* Quand on passe la souris sur un lien */
+ul li a:hover{
+    color: rgb(230,104,59); /* Devient orange */
+}
+
+/* .info = Le bloc de texte à gauche */
+.info{
+    margin-left: 7%;
+    margin-top: 6%;
+}
+
+/* Le grand titre WEB DESIGNER */
+.info h1{
+    font-size: 65px;
+    color: rgb(36,32,30);
+}
+
+/* Le petit texte */
+.info h3{
+    font-size: 18px;
+    letter-spacing: 1px; /* Espace entre les lettres */
+    line-height: 24px;
+}
+
+/* span = Les lettres en orange : A de Ariana, W et D */
+.info span{
+    color: rgb(230,104,59);
+}
+
+/* Le bouton Hire Me */
+.info a{
+    text-decoration: none;
+    color: #fff; /* Texte blanc */
+    background: rgb(36,32,30); /* Fond noir */
+    margin: 26px 0;
+    padding: 10px 18px;
+    border-radius: 10px; /* Coins arrondis */
+    display: inline-block;
+    transition: .4s ease;
+}
+
+/* Quand on passe la souris sur Hire Me */
+.info a:hover{
+    background: rgb(59,174,209); /* Devient bleu */
+}
+
+/* .image = Le conteneur de la fille */
+.image{
+    width: 30%;
+    height: 60%;
+    position: absolute; /* Placé librement sur la page */
+    right: 100px;
+    bottom: 0;
+}
+
+/* La photo de la fille */
+.image img{
+    position: absolute;
+    height: 140%; /* Plus grande que son conteneur */
+    left: 40%;
+    transform: translate(-50%); /* Centre l'image */
+    bottom: 0;
+    transition: left 2s ease; /* L'animation de glissement dure 2s */
+}
+
+
+/* Quand on survole la zone .image, la fille glisse vers la droite */
+.image:hover .girl{
+    left: 55%;
+}
+
+/* .icons = Les icônes en bas à gauche */
+.icons a{
+    text-decoration: none;
+    color:  #000;
+}
+.icons{
+    margin: 7px;
+    margin-top: 20px;
+}
+.icons img{
+    width: 40px;
+    margin-left: 7%;
+    margin-right: -60px;
+    transition: .4s ease;
+    display: inline-block;
+    cursor: pointer;
+}
+.icons img:hover{
+    transition: scale(1.2);
+    transform: translate(-8px) scale(1.2);
+}
+
+
+

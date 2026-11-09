@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ceci est ma page contact</title>
+</head>
+
+<body>
+    <h1>Bienvenue sur ma page Contact</h1>
+    <h2>Veuillez remplir le Formulaire</h2>
+    <form action="">
+        <label for="nom">veuillez entrer votre Nom</label>
+        <input type="text" name="nom" id="nom" required maxlength="5"><br></br>
+        <label for="prenom">veuillez entrer votre Prenom</label>
+        <input type="text" name="prenom" required id="prenom" value="nelle"><br></br>
+        <label for="email">veuillez entrer votre email</label>
+        <input type="email" name="email" id="email" required><br></br>
+        <label for="datenaiss">veuillez entrer votre date de naissance</label>
+        <input type="date" name="" id="datenaiss" required><br></br>
+        <label for="motdepasse">veuillez entrer votre Mot de passe </label>
+        <input type="password" name="motdepasse" id="motdepasse" required><br></br>
+        <label for="genre">Genre </label><br><br>
+        <input type="radio" name="genre" id="genre" value="Homme">Homme<br></br>
+        <input type="radio" name="genre" id="genre" value="Femme">Femme<br></br>
+        <label for="pays">veuillez entrer votre Pays</label><br><br>
+        <select name="pays" id="" required>
+            <option value=""></option>
+            <option value="Congo">Congo</option>
+            <option value="Mali">Mali</option>
+            <option value="Cameroun">Cameroun</option>
+            <option value="Rwanda">Rwanda</option>
+            <option value="RDC">RDC</option>
+        </select><br><br>
+        <label for="commentaire">veuillez saisir votre commentaire</label>
+        <textarea name="commentaire" id="commentaire"></textarea><br><br>
+        <button type="submit">Envoyer</button>
+    </form>
+</body>
+
+</html>
